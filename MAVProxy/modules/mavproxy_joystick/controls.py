@@ -79,7 +79,10 @@ class Axis (Control):
         if self.invert:
             val = -val
 
-        return scale(val, outlow=self.outlow, outhigh=self.outhigh)
+        tmpscale = scale(val, inlow=self.inlow, inhigh=self.inhigh, outlow=self.outlow, outhigh=self.outhigh)
+        print(val)
+        print(tmpscale)
+        return tmpscale
 
 
 class Hat (Control):
@@ -147,6 +150,7 @@ class Joystick (object):
                 handler = Hat(self.joystick, control['id'], control['axis'])
 
             self.channels[control['channel']-1] = handler
+            print(handler)
 
     def read(self):
         '''Returns an array of channel values.  Return 0 for channels
