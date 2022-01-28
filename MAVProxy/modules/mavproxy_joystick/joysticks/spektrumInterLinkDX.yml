@@ -7,25 +7,41 @@ controls:
     type: axis
     id: 3
     invert: false
+    inlow: -0.7456
+    inhigh: 0.8179
+    outlow: 1200
+    outhigh: 1800
   - channel: 2
     type: axis
     id: 4
     invert: true
+    inlow: -0.812
+    inhigh: 0.8994
+    outlow: 1200
+    outhigh: 1800
   - channel: 3
     type: axis
     id: 1
     invert: false
+    inlow: -0.7139
+    inhigh: 0.5683
+    outlow: 1200
+    outhigh: 1800
   - channel: 4
     type: axis
     id: 0
     invert: false
+    inlow: -0.8247
+    inhigh: 0.8193
+    outlow: 1200
+    outhigh: 1800
   - channel: 6
-    type: axis
-    id: 7
+    type: button
+    id: 11
     invert: false
   - channel: 7
     type: button
-    id: 11
+    id: 0
     invert: false
   - channel: 8
     type: button
