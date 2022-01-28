@@ -38,6 +38,8 @@ sudo /usr/sbin/iptables-save
 sudo netstat -tulpn
 ```
 
+The Pixhawk must be configured. You can use mav.parm to set the drone with the good parameters.
+
 Run it on the controller (where the joystick is connected)
 -------
 
